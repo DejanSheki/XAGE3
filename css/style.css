@@ -48,6 +48,7 @@ img {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1920px;
   margin: 0 auto;
   margin-top: 2rem;
@@ -64,4 +65,43 @@ main {
 }
 .mother-child {
   margin: 4rem auto;
+}
+button {
+  border-radius: 50rem;
+  padding: 0.9rem 2.5rem;
+  color: rgba(35, 31, 32, 1);
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+      101deg,
+      rgb(216, 179, 118),
+      rgb(220, 185, 122),
+      rgb(233, 202, 132),
+      rgb(237, 208, 136),
+      rgb(199, 164, 88),
+      rgb(168, 128, 49),
+      rgb(174, 136, 57),
+      rgb(192, 156, 80),
+      rgb(221, 190, 116),
+      rgb(237, 208, 136)
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+}
+.pexels-artem-podrez {
+  position: relative;
+  bottom: 26px;
+  z-index: -1;
 }
