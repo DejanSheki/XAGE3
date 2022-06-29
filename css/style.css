@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/Nexa/Nexa-Regular.otf") format("woof");
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,10 +27,10 @@ nav a {
   font-weight: 400;
   font-size: 1.25em;
   color: rgba(35, 31, 32, 1);
+  transition: all 0.4s ease;
 }
 nav a:hover {
   color: rgb(205, 168, 96);
-  transition: all 0.4s ease;
 }
 header,
 .mother-child {
@@ -71,7 +74,7 @@ button {
   padding: 0.9rem 2.5rem;
   color: rgba(35, 31, 32, 1);
   font-size: 1.1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: 300;
   border: solid 2px transparent;
   background-image: linear-gradient(
@@ -79,7 +82,7 @@ button {
       rgba(255, 255, 255, 0)
     ),
     linear-gradient(
-      101deg,
+      130deg,
       rgb(216, 179, 118),
       rgb(220, 185, 122),
       rgb(233, 202, 132),
@@ -95,6 +98,7 @@ button {
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 button:hover {
   box-shadow: none;
