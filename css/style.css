@@ -108,3 +108,8 @@ h1 {
   right: 2%;
   width: 20%;
 }
+.popup {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}
