@@ -51,7 +51,7 @@ body {
   text-align: center;
 }
 .bonjour p {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
 }
 .the {
   font-weight: 700;
@@ -81,14 +81,15 @@ h1 {
   right: 0;
   width: 100%;
   display: flex;
-  padding: 0;
+  padding: 0.9rem 0 0 0;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 .input-field input {
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.5rem;
   border: none;
+  font-family: "Montserrat", sans-serif;
 }
 .input-field input[type="button"] {
   background: black;
@@ -98,4 +99,12 @@ h1 {
 }
 .input-field input[type="email"] {
   border-radius: 5px 0 0 5px;
+  padding-right: 1rem;
+}
+
+.trademark {
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  width: 20%;
 }
