@@ -18,6 +18,20 @@ body {
   margin: 0 auto;
   /* height: 100vh; */
 }
+/* .container:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url("../images/FOTKA\ ZA\ mob.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
 
 .container img {
   display: block;
@@ -140,9 +154,6 @@ h1 {
 }
 
 @media (max-width: 1480px) {
-  .slogan h2 {
-    font-size: 1.1rem;
-  }
   .bonjour h1 {
     font-size: 1.5rem;
   }
@@ -154,9 +165,6 @@ h1 {
   }
 }
 @media (max-width: 1200px) {
-  .slogan h2 {
-    font-size: 0.9rem;
-  }
   .bonjour h1 {
     font-size: 1.1rem;
   }
@@ -177,26 +185,61 @@ h1 {
   }
 }
 @media (max-width: 780px) {
-  .slogan h2 {
-    font-size: 0.4rem;
+  .logo {
+    position: absolute;
+    top: 4%;
+    right: 36%;
+    width: 28%;
+  }
+  .slogan {
+    width: 61%;
+  }
+  .bonjour {
+    width: 100%;
+    top: 29%;
+    right: 0;
   }
   .bonjour h1 {
-    margin-bottom: 0.2rem;
-    font-size: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
   }
   .bonjour p {
-    font-size: 0.3rem;
+    font-size: 1.3rem;
   }
   .trademark p {
     font-size: 0.4rem;
   }
   .information-text {
     top: 47%;
+    right: 0;
     padding: 0 1rem 0 0.2rem;
-    font-size: 0.3rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .input {
+    position: absolute;
+    top: 53%;
+    right: 21%;
+    width: 55.4%;
   }
   .input-field input {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.3rem;
+    padding: 0.6rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .input-field input[type="email"] {
+    padding-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .bonjour h1 {
+    font-size: 1.4rem;
+  }
+  .bonjour p {
+    font-size: 1rem;
+  }
+  .information-text {
+    top: 45%;
+    font-size: 0.8rem;
   }
 }
