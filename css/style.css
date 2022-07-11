@@ -38,8 +38,16 @@ body {
 .slogan {
   width: 30%;
   position: absolute;
-  top: 22%;
+  top: 21%;
   right: 19%;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+.slogan h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 .bonjour {
   position: absolute;
@@ -51,7 +59,8 @@ body {
   text-align: center;
 }
 .bonjour p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 .the {
   font-weight: 700;
@@ -66,8 +75,9 @@ h1 {
   top: 49%;
   right: 19%;
   width: 30%;
-  padding: 0 5rem 0 2rem;
+  padding: 0 4rem 0 1.5rem;
   color: white;
+  text-align: center;
 }
 .input {
   position: absolute;
@@ -96,6 +106,7 @@ h1 {
   color: white;
   border-radius: 0 5px 5px 0;
   margin-left: 3px;
+  cursor: pointer;
 }
 .input-field input[type="email"] {
   border-radius: 5px 0 0 5px;
@@ -108,8 +119,57 @@ h1 {
   right: 2%;
   width: 20%;
 }
+.trademark p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;
+}
 .popup {
   position: absolute;
   top: 30%;
   right: 15%;
+  display: none;
+  /* background-image: url("../images/pexels-artem-podrez.jpg");
+  width: 500px;
+  height: 480px;
+  border-radius: 5px; */
+}
+
+@media (max-width: 1480px) {
+  .slogan h2 {
+    font-size: 1.1rem;
+  }
+  .bonjour h1 {
+    font-size: 1.5rem;
+  }
+  .bonjour p {
+    font-size: 1.3rem;
+  }
+  .trademark p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .slogan h2 {
+    font-size: 0.9rem;
+  }
+  .bonjour h1 {
+    font-size: 1.1rem;
+  }
+  .bonjour p {
+    font-size: 1rem;
+  }
+  .trademark p {
+    font-size: 0.9rem;
+  }
+  .information-text {
+    top: 47%;
+    padding: 0 2rem 0 0.5rem;
+    font-size: 0.8rem;
+  }
+  .input-field input {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+  }
 }
