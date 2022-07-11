@@ -42,7 +42,9 @@ body {
   width: 100%;
   position: relative;
 }
-
+.small {
+  display: none !important;
+}
 .logo {
   position: absolute;
   top: 4%;
@@ -181,6 +183,12 @@ h1 {
   }
 }
 @media (max-width: 780px) {
+  .big {
+    display: none !important;
+  }
+  .small {
+    display: block !important;
+  }
   .logo {
     position: absolute;
     top: 4%;
