@@ -176,3 +176,27 @@ h1 {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 780px) {
+  .slogan h2 {
+    font-size: 0.4rem;
+  }
+  .bonjour h1 {
+    margin-bottom: 0.2rem;
+    font-size: 0.6rem;
+  }
+  .bonjour p {
+    font-size: 0.3rem;
+  }
+  .trademark p {
+    font-size: 0.4rem;
+  }
+  .information-text {
+    top: 47%;
+    padding: 0 1rem 0 0.2rem;
+    font-size: 0.3rem;
+  }
+  .input-field input {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.3rem;
+  }
+}
