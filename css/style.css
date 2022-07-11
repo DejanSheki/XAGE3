@@ -251,4 +251,8 @@ h1 {
     right: 19%;
     width: 62.4%;
   }
+  .popup {
+    right: 0;
+    width: 100%;
+  }
 }
