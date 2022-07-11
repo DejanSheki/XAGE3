@@ -136,7 +136,7 @@ h1 {
   border-radius: 5px; */
 }
 .popup-open {
-  display: block;
+  display: block !important;
 }
 
 @media (max-width: 1480px) {
