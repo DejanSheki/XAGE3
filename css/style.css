@@ -179,10 +179,6 @@ h1 {
     padding: 0 2rem 0 0.5rem;
     font-size: 0.8rem;
   }
-  .input-field input {
-    padding: 0.5rem 0.6rem;
-    font-size: 0.8rem;
-  }
 }
 @media (max-width: 780px) {
   .logo {
@@ -217,14 +213,14 @@ h1 {
     width: 100%;
   }
   .input {
-    position: absolute;
     top: 53%;
     right: 21%;
     width: 55.4%;
   }
   .input-field input {
-    padding: 0.6rem 0.7rem;
-    font-size: 0.8rem;
+    padding: 0.6rem 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .input-field input[type="email"] {
@@ -241,5 +237,10 @@ h1 {
   .information-text {
     top: 45%;
     font-size: 0.8rem;
+  }
+  .input {
+    top: 55%;
+    right: 19%;
+    width: 62.4%;
   }
 }
