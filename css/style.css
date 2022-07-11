@@ -135,6 +135,9 @@ h1 {
   height: 480px;
   border-radius: 5px; */
 }
+.popup-open {
+  display: block;
+}
 
 @media (max-width: 1480px) {
   .slogan h2 {
