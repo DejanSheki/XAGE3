@@ -9,15 +9,21 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
 }
- 
-echo "Connected successfully";
-$email= $_POST['email'];
- 
-$sql = "INSERT INTO subscribers ( email, date) VALUES ('$email', NOW())";
-if (mysqli_query($conn, $sql)) {
-      echo "New record created successfully";
-} else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+
+$sql = "SELECT * FROM subscribers";
+
+$result = $conn->query($sql);
+$results = array();
+while($row = $result->fetch_assoc())
+{
+   $results[] = array(
+      'ID' => $row['ID'],
+      'email' => $row['email'],
+      'date' => $row['date']
+   );
 }
+$json = json_encode($results);
+echo $json;
+
 mysqli_close($conn);
 ?>
